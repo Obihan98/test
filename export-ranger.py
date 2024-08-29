@@ -6,7 +6,7 @@ def execute(ranger_policy_helper):
     logger.info('Testing Ranger export-import functions')
     
     ranger_config_dict = {
-        "output_folder_path": "/tmp",
+        "output_folder_path": "/tmp/ranger_restore",
         "ssl_cert_path": "/var/lib/ambari-server/keys/schnonpun0.nprodbdsdbpvtsn.nprodbdsvcn.oraclevcn.com.crt"
     }
 
