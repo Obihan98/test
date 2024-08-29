@@ -13,3 +13,4 @@ def execute(ranger_policy_helper):
     }
     
     ranger_policy_helper.export_ranger_policies(ranger_config_dict)
+    logger.info('If you see this function did run.')
