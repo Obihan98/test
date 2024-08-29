@@ -7,7 +7,8 @@ def execute(ranger_policy_helper):
     
     ranger_config_dict = {
         "output_folder_path": "/tmp/ranger_restore",
-        "ssl_cert_path": "/var/lib/ambari-server/keys/schnonpun0.nprodbdsdbpvtsn.nprodbdsvcn.oraclevcn.com.crt"
+        "ssl_cert_path": "/var/lib/ambari-server/keys/schnonpun0.nprodbdsdbpvtsn.nprodbdsvcn.oraclevcn.com.crt",
+        "output_file_format": "json"
     }
 
     try:
