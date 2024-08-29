@@ -9,7 +9,7 @@ def execute(ranger_policy_helper):
         "output_folder_path": "/tmp",  # Mandatory
         "service_list": "ranger",  # Optional
         "exported_policies_file_name": "ranger-policy-output",  # Optional
-        "zone_name": "us-ashburn-1"  # Optional
+        "zone_name": "us-east1"  # Optional
     }
     
     ranger_policy_helper.export_ranger_policies(ranger_config_dict)
