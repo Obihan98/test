@@ -9,6 +9,9 @@ def execute(ranger_policy_helper):
         "output_folder_path": "/tmp",
         "ssl_cert_path": "/var/lib/ambari-server/keys/schnonpun1.nprodbdsdbpvtsn.nprodbdsvcn.oraclevcn.com.crt"
     }
-    
-    ranger_policy_helper.export_ranger_policies(ranger_config_dict)
-    logger.info('If you see this function did run.')
+
+    try:
+        anger_policy_helper.export_ranger_policies(ranger_config_dict)
+    except Exception as e:
+        logger.info("Exception type: %s", type(e))  # Log the exception type
+        logger.info("Exception details: %s", e)    # Log the exception details
