@@ -11,7 +11,7 @@ def execute(ranger_policy_helper):
     }
 
     try:
-        anger_policy_helper.export_ranger_policies(ranger_config_dict)
+        ranger_policy_helper.export_ranger_policies(ranger_config_dict)
     except Exception as e:
         logger.info("Exception type: %s", type(e))  # Log the exception type
         logger.info("Exception details: %s", e)    # Log the exception details
